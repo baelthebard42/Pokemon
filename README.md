@@ -1,6 +1,6 @@
 # Running the endpoints
 
-Make sure you have PostgreSQL setup in your system. Create the database using pgadmin4.
+Make sure you have PostgreSQL setup in your system. Create the server and database using pgadmin4.
 
 Open the directory and follow the steps:
 
@@ -12,10 +12,13 @@ Open the directory and follow the steps:
    `db_url = postgresql+asyncpg://[your-db-username]:[your-password]@[postgre-server-name]/[db-name]` <br>
    `limit = [Number-of-pokemon-characters-to-fetch]`
 
-3. Run the server : <br><br>
+3. Create the table in database using the following command (make sure you are in the main directory) : <br><br>
+   `py make_datab.py` <br><br>
+
+4. Run the server : <br><br>
    `uvicorn main:app --reload`
 
-4. Follow the hosting link, add '/docs' to it for the Swagger UI interface.
+5. Follow the hosting link, add '/docs' to it for the Swagger UI interface.
 
-5. Use v1 version. Execute the queries as per your requirement !!
+6. Use v1 version. Execute the queries as per your requirement !!
    
